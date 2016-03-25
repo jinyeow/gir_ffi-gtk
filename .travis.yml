@@ -20,7 +20,8 @@ matrix:
     - rvm: rbx-3
 before_install:
   - sudo apt-get -qq update
-  - sudo apt-get install -y libgirepository1.0-dev gobject-introspection gir1.2-gtk-3.0
+  - sudo apt-get install -y libgirepository1.0-dev gobject-introspection
+  - sudo apt-get install -y gir1.2-gtk-3.0 gir1.2-gtk-2.0
   - gem update bundler
 before_script:
   - "export DISPLAY=:99.0"
